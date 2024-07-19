@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinga World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <div id="menu-btn" class="fas fa-bars fa-3x"></div>
+        <a href="#" class="logo">Dinga <span>World</span></a>
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Vehicles">Vehicles</a>
+            <a href="#Services">Services</a>
+            <a href="#Featured">Sell your car</a>
+            <a href="#Contact">Contact</a>
+            
+        </nav>
+        <div id="login-btn">
+            <button class="btn">login</button>
+            <i class='far fa-user' style='color:#161515' ></i>
+        </div>
+    </section>
+    <section class="login-form-container">
+        <span class="fas fa-times fa-2x" id="close-login-form"></span>
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>Forgot your password <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account? <a href="#">create one</a></p>
+        </form>
+    </section>
+    <!-- home -->
+    <section class="home" id="Home">
+        <h1 class="home-parallax" data-speed="-2">
+            it's a <span>dinga</span> world
+        </h1>
+        <img class="home-parallax" data-speed="-2" src="/Assets/banner dinga world 3.png" alt="">
+        <a href="#" class="btn home-parallax" data-speed="7">Find cars</a>
+    </section>
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fa-solid fa-house fa-2x"></i>
+            <div class="content">
+                <h3>Branch</h3>
+                <p>Ngong Road</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-car fa-2x"></i>
+            <div class="content">
+                <h3>50+</h3>
+                <p>Different Models</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-handshake fa-2x"></i>
+            <div class="content">
+                <h3>Quality</h3>
+                <p>Customer Service</p>
+            </div>
+        </div>
+    </section>
+    <section class="vehicles" id="Vehicles">
+        <h1 class="heading">Popular <span>Vehicles</span></h1>
+        <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Assets/audi a3 2016 front.webp" alt="">
+                    <div class="content">
+                        <h3>Audi A3</h3>
+                        <div class="price">
+                            Kshs: <span>XXXXX</span>
+                            <p>
+                            <span class="fas fa-circle"></span>2016
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Petrol
+                            <span class="fas fa-circle"></span>2.0Ltr
+                            <span class="fas fa-circle"></span>Sedan
+                            </p>
+                            <a href="#" class="btn">Check out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="/Assets/audi q5 front 2016.webp" alt="">
+                    <div class="content">
+                        <h3>Audi Q5</h3>
+                        <div class="price">
+                            Kshs: <span>XXXXX</span>
+                            <p>
+                            <span class="fas fa-circle"></span>2016
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Petrol
+                            <span class="fas fa-circle"></span>Turbo
+                            <span class="fas fa-circle"></span>2.0Ltr
+                            <span class="fas fa-circle"></span>Crossover
+                            </p>
+                            <a href="#" class="btn">Check out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="/Assets/SG0.png" alt="">
+                    <div class="content">
+                        <h3>Subaru Forester</h3>
+                        <div class="price">
+                            Kshs: <span>XXXXX</span>
+                            <p>
+                            <span class="fas fa-circle"></span>2016
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Petrol
+                            <span class="fas fa-circle"></span>Turbo
+                            <span class="fas fa-circle"></span>2.0Ltr
+                            <span class="fas fa-circle"></span>Crossover
+                            </p>
+                            <a href="#" class="btn">Check out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="/Assets/toyota rav  2017.webp" alt="">
+                    <div class="content">
+                        <h3>Toyota Rav 4</h3>
+                        <div class="price">
+                            Kshs: <span>XXXXX</span>
+                            <p>
+                            <span class="fas fa-circle"></span>2017
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Petrol
+                            <span class="fas fa-circle"></span>2.0Ltr
+                            <span class="fas fa-circle"></span>Crossover
+                            </p>
+                            <a href="#" class="btn">Check out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- services -->
+   <section class="services" id="Services">
+    <h1 class="heading">Our <span>Services</span></h1>
+
+    <div class="box-container">
+
+    <div class="box">
+    <i class="fas fa-car"></i>
+    <h3>car dealers</h3>
+    <p>Dealers in all kinds of cars, dealers in luxury cars</p>
+    <a href="#" class="btn">Read more</a>
+    </div>
+    <div class="box">
+            <i class="fa-regular fa-handshake"></i>
+            <h3>Sell your car</h3>
+            <p>Need to sell your car, we sell on behalf</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>Car service</h3>
+            <p>Need to service your car?</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    <div class="box">
+                <i class='bx bxs-car-crash'></i>
+                <h3>car insurance</h3>
+                <p>Cant drive without insurance, reach out.</p>
+                <a href="#" class="btn">Read more</a>
+        </div>
+    </div>
+   </section> 
+
+   <!-- sell your car -->
+    <section class="featured" id="Featured">
+        <h1 class="heading"> <span>Sell</span> your car</h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="Assets/2017 Volkswagen Touareg.webp" alt="">
+                    <h3>Volkswagen <br> Touareg</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Assets/2017 Porsche Cayenne.webp" alt="">
+                    <h3>Porsche <br> Cayenne</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Assets/2017 Volvo S60.webp" alt="">
+                    <h3>Volvo <br>S60</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Assets/2024 INFINITI QX80.webp" alt="">
+                    <h3>INFINITI <br> QX80</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="Assets/2017 volvo xc90.webp" alt="">
+                    <h3>volvo <br> xc90</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Assets/2018 Mitsubishi Outlander PHEV.webp" alt="">
+                    <h3>Mitsubishi Outlander PHEV</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Assets/2021 Lexus LX 570.webp" alt="">
+                    <h3>Lexus <br> LX 570</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="Assets/cx5 2017.webp" alt="">
+                    <h3>Mazda <br>CX5</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price"><span>Kshs:</span> XXXXX</div>
+                    <a href="#" class="btn">Show More</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="review" id="review">
+       <h1 class="heading"><span>Client's</span> Review</h1>
+       <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <i class="fa-solid fa-person"></i> 
+                <div class="content">
+                    <p>customer service and reliablity is top notch.</p>
+                    <h3>Mark Mark</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <i class="fa-solid fa-person"></i> 
+                <div class="content">
+                    <p>Variety of options to choose from.</p>
+                    <h3>Stacy Doe</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <i class="fa-solid fa-person"></i> 
+                <div class="content">
+                    <p>Honesty to the last drop.</p>
+                    <h3>Martin Martin</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <i class="fa-solid fa-person"></i> 
+                <div class="content">
+                    <p>After sale service is never a doubt.</p>
+                    <h3>John Doe</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+       </div>
+    </section>
+    <!-- contact -->
+     <section class="contact" id="Contact">
+        <h1 class="heading">contact <span>us</span></h1>
+     <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7908450371337!2d36.7827748!3d-1.3003375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11fbf4336afd%3A0x84cc3e9e13700d79!2sDinga%20World!5e0!3m2!1sen!2ske!4v1721388869944!5m2!1sen!2ske"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+     <form action="">
+        <h3>Get in touch</h3>
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="number" placeholder="number" class="box">
+        <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+     </form>
+    </div>
+     </section>   
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
