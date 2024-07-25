@@ -13,6 +13,7 @@
     scroll-behavior: smooth;
     list-style: none;
     text-transform: capitalize;
+    max-width: 2200px;
 }
 :root{
     --main-color:darkred;
@@ -366,10 +367,11 @@ section{
 }
 /* home */
 .home{
-    padding-top: 160px;
+    /* padding-top: 160px; */
     text-align: center;
     overflow-x: hidden;
     padding-bottom: 300px;
+    margin-top: -150px;
 }
 .home h1{
     font-size: 50px;
@@ -386,9 +388,10 @@ section{
 .home img{
     width: 100%;
     margin: 16px 0;
+    padding-top: 100px;
 }
 .home #btn1{
-    margin-bottom: 250px;
+    margin-bottom: 50px;
 }
 .icons-container{
     padding-top: 30px;
