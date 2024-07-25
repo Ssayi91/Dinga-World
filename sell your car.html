@@ -15,11 +15,11 @@
         <div id="menu-btn" class="fas fa-bars fa-3x"></div>
         <a href="#" class="logo">Dinga <span>World</span></a>
         <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#Vehicles">Vehicles</a>
-            <a href="#Featured">Sell your car</a>
-            <a href="#Services">Services</a>
-            <a href="#Contact">Contact</a> 
+            <a href="#sell your car" class="#active">Sell your car</a>
+            <a href="#DingaWorld">Dinga World</a>
+            <a href="#Import on stock">Import on stock</a>
+            <a href="#Blog">Blog</a>
+            <!-- <a href="#Contact">Contact</a>  -->
         </nav>
         <div id="login-btn">
             <button class="btn">login</button>
@@ -48,13 +48,39 @@
             it's a <span>dinga</span> world
         </h1>
         <img class="home-parallax" data-speed="-2" src="Assets/banner dinga world 3.png" alt="">
+        <a href="#" class="btn" id="btn1">Sell your car</a>
         <form action="car-search">
             <input type="brand" placeholder="brand" class="input-box">
             <input type="name" placeholder="name" class="input-box">
             <input type="year" placeholder="year" class="input-box">
             <input type="type" placeholder="type..suv" class="input-box">
-            <input type="submit" value="search car" class="btn">
+            <!-- <input type="submit" value="search car" class="btn"> -->
         </form>
+        <div class="wrapper">
+            <header>
+                <h2>Price <span>Range</span></h2>
+                <p>Enter or select min and max price</p>
+            </header>
+            <div class="price-input">
+                <div class="field">
+                    <span>Min</span>
+                    <input type="number" value="150000" class="min-input">
+                </div>
+                <div class="separator">-</div>
+                <div class="field">
+                    <span>Max</span>
+                    <input type="number" value="50000000" class="max-output">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="progress"></div>
+            </div>
+            <div class="range-input">
+                <input type="range" min="0" max="50000000" value="150000" class="min-range">
+                <input type="range" min="0" max="50000000" value="150000" class="max-range">
+            </div>
+        </div>
+         <input type="submit" value="search car" class="btn">
     </section>
     <section class="vehicles" id="Vehicles">
         <h1 class="heading">Popular <span>Vehicles</span></h1>
@@ -132,7 +158,7 @@
                 </div>
             </div>
             <div class="find">
-                <a href="#" class="btn center-btn">More cars</a>
+                <a href="#DingaWorld.html" class="btn center-btn">More cars</a>
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -258,141 +284,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-     <!-- services -->
-   <section class="services" id="Services">
-    <h1 class="heading">Our <span>Services</span></h1>
-
-    <div class="box-container">
-
-    <div class="box">
-    <i class="fas fa-car"></i>
-    <h3>car dealers</h3>
-    <p>Dealers in all kinds of cars, dealers in luxury cars</p>
-    <a href="#" class="btn">Read more</a>
-    </div>
-    <div class="box">
-            <i class="fa-regular fa-handshake"></i>
-            <h3>Sell your car</h3>
-            <p>Need to sell your car, we sell on behalf</p>
-            <a href="#" class="btn">Read more</a>
-        </div>
-    <div class="box">
-            <i class="fas fa-tools"></i>
-            <h3>Car service</h3>
-            <p>Need to service your car?</p>
-            <a href="#" class="btn">Read more</a>
-        </div>
-    <div class="box">
-                <i class='bx bxs-car-crash'></i>
-                <h3>car insurance</h3>
-                <p>Cant drive without insurance, reach out.</p>
-                <a href="#" class="btn">Read more</a>
-        </div>
-    </div>
-   </section> 
-   <!-- info -->
-    <section class="icons-container">
-        <div class="icons">
-            <i class="fa-solid fa-house fa-2x"></i>
-            <div class="content">
-                <h3>Branch</h3>
-                <p>Ngong Road</p>
-            </div>
-        </div>
-        <div class="icons">
-            <i class="fa-solid fa-car fa-2x"></i>
-            <div class="content">
-                <h3>50+</h3>
-                <p>Different Models</p>
-            </div>
-        </div>
-        <div class="icons">
-            <i class="fa-solid fa-handshake fa-2x"></i>
-            <div class="content">
-                <h3>Quality</h3>
-                <p>Customer Service</p>
-            </div>
-        </div>
-    </section>
-    <section class="review" id="review">
-       <h1 class="heading"><span>Client's</span> Review</h1>
-       <div class="swiper review-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide box">
-                <i class="fa-solid fa-person"></i> 
-                <div class="content">
-                    <p>customer service and reliablity is top notch.</p>
-                    <h3>Mark Mark</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <i class="fa-solid fa-person"></i> 
-                <div class="content">
-                    <p>Variety of options to choose from.</p>
-                    <h3>Stacy Doe</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <i class="fa-solid fa-person"></i> 
-                <div class="content">
-                    <p>Honesty to the last drop.</p>
-                    <h3>Martin Martin</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <i class="fa-solid fa-person"></i> 
-                <div class="content">
-                    <p>After sale service is never a doubt.</p>
-                    <h3>John Doe</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-       </div>
-    </section>
-    <!-- contact -->
-     <section class="contact" id="Contact">
-        <h1 class="heading">contact <span>us</span></h1>
-     <div class="row">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7908450371337!2d36.7827748!3d-1.3003375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11fbf4336afd%3A0x84cc3e9e13700d79!2sDinga%20World!5e0!3m2!1sen!2ske!4v1721388869944!5m2!1sen!2ske"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-     <form action="">
-        <h3>Get in touch</h3>
-        <input type="text" placeholder="name" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="number" placeholder="number" class="box">
-        <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" class="btn">
-     </form>
-    </div>
-     </section>   
+     <!-- footer -->  
      <section class="footer">
         <div class="social">
             <h1>Social</h1>

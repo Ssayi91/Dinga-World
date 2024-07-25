@@ -111,14 +111,46 @@ var swiper = new Swiper(".vehicles-slider", {
 let header = document.querySelector('header');
 window.addEventListener('scroll', () =>{
     header.classList.toggle('shadow', window.scrollY > 0)
-});
-// search
-let search   = document.querySelector('.searchbox');
+})
+document.addEventListener("DOMContentLoaded", () => {
+  const minInput = document.querySelector(".min-input");
+  const maxInput = document.querySelector(".max-output");
+  const minRange = document.querySelector(".min-range");
+  const maxRange = document.querySelector(".max-range");
+  const progress = document.querySelector(".progress");
 
-document.querySelector('#search-icon').onclick = ()=> {
-    search.classList.toggle('active');
-}
-document.getElementById('menu-icon').onclick = function() {
-    var navbar = document.querySelector('.navbar');
-    navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
-}
+  const setRangeValues = () => {
+      const minValue = parseInt(minInput.value);
+      const maxValue = parseInt(maxInput.value);
+
+      if (minValue > maxValue) {
+          minInput.value = maxValue;
+      }
+
+      minRange.value = minValue;
+      maxRange.value = maxValue;
+
+      const minPercent = (minValue / minRange.max) * 100;
+      const maxPercent = (maxValue / maxRange.max) * 100;
+
+      progress.style.left = `${minPercent}%`;
+      progress.style.right = `${100 - maxPercent}%`;
+  };
+
+  minInput.addEventListener("input", setRangeValues);
+  maxInput.addEventListener("input", setRangeValues);
+
+  minRange.addEventListener("input", () => {
+      minInput.value = minRange.value;
+      setRangeValues();
+  });
+
+  maxRange.addEventListener("input", () => {
+      maxInput.value = maxRange.value;
+      setRangeValues();
+  });
+
+  setRangeValues();
+});
+
+
