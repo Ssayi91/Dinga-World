@@ -56,8 +56,16 @@
             <select id="carModel" class="input-box">
                 <option value="" disabled selected>Model</option>
             </select>
-            <input type="year" placeholder="year" class="input-box">
-            <input type="type" placeholder="type..suv" class="input-box">
+            <input type="number" placeholder="Year" class="input-box" id="carYear" min="1886" max="2024">
+        <select id="carType" class="input-box">
+            <option value="" disabled selected>Type</option>
+            <option value="SUV">SUV</option>
+            <option value="Sedan">Sedan</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Convertible">Convertible</option>
+            <option value="Pickup">Pickup</option>
+        </select>
             <!-- <input type="submit" value="search car" class="btn"> -->
         </form>
         <div class="wrapper">
