@@ -50,8 +50,12 @@
         <img class="home-parallax" data-speed="-2" src="Assets/banner dinga world 3.png" alt="">
         <a href="#" class="btn" id="btn1">Sell your car</a>
         <form action="car-search">
-            <input type="brand" placeholder="brand" class="input-box">
-            <input type="name" placeholder="name" class="input-box">
+            <select id="carBrand" class="input-box">
+                <option value="" disabled selected>Brand</option>
+            </select>
+            <select id="carModel" class="input-box">
+                <option value="" disabled selected>Model</option>
+            </select>
             <input type="year" placeholder="year" class="input-box">
             <input type="type" placeholder="type..suv" class="input-box">
             <!-- <input type="submit" value="search car" class="btn"> -->
